@@ -20,20 +20,20 @@ namespace KamenNuzkyPapir
                 do
                 {
                     Console.WriteLine("0 = kámen; 1 = nůžky; 2 = papír"); // vypíše na obrazovku výběr: "0 = kámen; 1 = nůžky; 2 = papír"
-                    Console.WriteLine("Vyber činnost: ");
+                    Console.WriteLine("Vyber činnost: "); //Obrazovka vyzve uživatele, aby zadal jednu z výše uvedených možností
                     string koeficient = Console.ReadLine();  // přečte koeficienty
                     vstup = int.TryParse(koeficient, out uzivatel);  // v proměnné vstup se převede kouficient na číslo
                     if (vstup == true) // pokud se koeficient správně převedl na číslo
                     {
-                        Console.WriteLine("Zadal jsi " + uzivatel);
+                        Console.WriteLine("Zadal jsi " + uzivatel); // na obrazovku se vypíše, jakou možnost uživatel zvolil
                     }
                     else
                     {
-                        Console.WriteLine("Zadal jsi neplatnou hodnotu ");
+                        Console.WriteLine("Zadal jsi neplatnou hodnotu "); // vypíše se na obrazovku, pokud uživatel zadá hodnotu mimo číslo (string, boll...)
                     }
                 }
                 while (vstup == false || uzivatel > 2 || uzivatel < 0); // opakuj znovu, pokud je vstup neplatný nebo zadavé hodnoty větší jak 2 nebo menší jak 0
-                int pc = pocitac.Next(0, 2);
+                int pc = pocitac.Next(0, 2); // počítač má na výběr z možností čísel 0,1,2 (random)
                 if (uzivatel == 0 || pc == 1)
                 {
                     VyhraUzivatele++;  // výhra uživatele = přičte se 1 bod za výhru
