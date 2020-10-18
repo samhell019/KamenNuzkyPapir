@@ -16,7 +16,6 @@ namespace KamenNuzkyPapir
             for (int i = 0; i < 5; i++) // opakování cyklu 5x
             {
 
-
                 do
                 {
                     Console.WriteLine("0 = kámen; 1 = nůžky; 2 = papír"); // vypíše na obrazovku výběr: "0 = kámen; 1 = nůžky; 2 = papír"
