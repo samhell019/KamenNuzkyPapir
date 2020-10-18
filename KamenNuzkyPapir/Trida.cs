@@ -63,8 +63,8 @@ namespace KamenNuzkyPapir
                     VyhraPc++;
                     Console.WriteLine("Vyhrál počítač! ");
                 }
+                
                 else { }
-
             }
             if (VyhraUzivatele < VyhraPc)
             {
