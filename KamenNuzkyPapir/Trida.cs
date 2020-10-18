@@ -20,6 +20,7 @@ namespace KamenNuzkyPapir
                 do
                 {
                     Console.WriteLine("0 = kámen; 1 = nůžky; 2 = papír"); // vypíše na obrazovku výběr: "0 = kámen; 1 = nůžky; 2 = papír"
+                    Console.WriteLine("Vyber činnost: ");
                     string koeficient = Console.ReadLine();  // přečte koeficienty
                     vstup = int.TryParse(koeficient, out uzivatel);  // v proměnné vstup se převede kouficient na číslo
                     if (vstup == true) // pokud se koeficient správně převedl na číslo
